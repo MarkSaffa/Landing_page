@@ -1,0 +1,375 @@
+:root {
+    --primary-color: rgb(5, 5, 59);
+    --secondary-color: rgb(63, 63, 209);
+    --acent-color-1: rgb(175, 175, 175);
+    --text-color: rgb(248, 244, 244);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--text-color);
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    position: sticky;
+    top:0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+header nav .logo {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+header nav a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+}
+
+header nav .menu-bar {
+    color: var(--text-color);
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+header nav .mobileClose {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-right: auto;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+ 
+.mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: var(--primary-color);
+    width: 300px;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.hero-section {
+    background-color: rgba(0, 0, 0, 0.644);
+    background-image: url(images/bg.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 2rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+    line-height: 4rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.hero-section button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .4rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+
+.hero-section button:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.hero-section img {
+    border-radius: 2rem;
+}
+
+.about-section {
+    padding: 4rem 2rem;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.about-section .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.about-section .cards-container .card {
+    border: 4px solid var(--secondary-color);
+    border-radius: 1.5rem;
+    padding: .5rem;
+}
+
+.about-section .cards-container .card img {
+    border-radius: 1.5rem;
+    object-fit: contain;
+    width: 12.5rem;
+}
+
+.about-section .cards-container .card p {
+    text-align: center;
+    padding: .5rem;
+    color: var(--secondary-color);
+}
+
+.courses-section  {
+    padding: 4rem 2rem;
+}
+
+.courses-section .cousrse-text {
+    text-align: center;
+}
+
+.courses-section .cousrse-text h2 {
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.courses-section .cousrse-text p {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.courses-section .courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.courses-section .courses .course img {
+     border-radius: .5rem;
+}
+
+.courses-section .courses .course h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.testimony {
+    background-color: var(--acent-color-1);
+    padding: 4rem;
+}
+
+.testimony .testi-text p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.testimony .testi-name {
+    float: right;
+    padding-right: 2.5rem;
+}
+
+.testimony .testi-name h3 {
+    font-size: 2rem;
+}
+
+.sign-up {
+    margin: 4rem .5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.CTA {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.CTA h2 {
+    font-size: 2rem;
+    line-height: 3cqmin;
+}
+
+.CTA p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.CTA .cta-btn {
+    border: 1px solid var(--text-color);
+    border-radius: 1rem;
+    padding: .5rem;
+    transition: all .5s ease-in-out;
+}
+.CTA a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.CTA .cta-btn:hover {
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 2rem;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .social-icons .link {
+    border: .2rem solid var(--text-color);
+    border-radius: 50%;
+    background-color: var(--text-color);
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+    transition: all .5s ease-in-out;
+}
+
+footer .social-icons .link:hover {
+    background-color: var(--acent-color-1);
+    border: .2rem solid var(--secondary-color);
+}
+
+footer .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+footer .links a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1.2rem;
+    font-size: 2rem;
+    transition: all .5s ease-in-out;
+}
+
+footer .links a:hover {
+    color: var(--secondary-color);
+}
+
+@media all and (max-width: 800px) {
+
+    html {
+        font: 90%;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    .hide {
+        display: none;
+    }
+
+   header nav .menu-bar {
+        display: block;
+    }
+
+    footer .links {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 680px) {
+    html {
+        font-size: 80%;
+    }
+    body {
+        font-size: 14px;
+    }
+
+     footer .links {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 480px) {
+    header {
+        width: 100%;
+    }
+    .mobile {
+        width: 100%;
+    }
+
+    footer .links {
+        flex-direction: column;
+    }
+}
+
